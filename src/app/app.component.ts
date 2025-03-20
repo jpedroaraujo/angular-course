@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {COURSES} from '../db-data';
+import { Course } from './model/course';
 
 @Component({
     selector: 'app-root',
@@ -8,7 +9,9 @@ import {COURSES} from '../db-data';
     standalone: false
 })
 export class AppComponent {
+  courses = COURSES
 
-
-
+  courseSelected(course: Course) {
+    console.log("Card clicked", course);
+  }
 }
