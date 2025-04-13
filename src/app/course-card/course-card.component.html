@@ -1,0 +1,14 @@
+<div class="course-card">
+
+    <div class="course-title">
+        {{ course().description }}
+    </div>
+    <img width="300" alt="Angular Logo"
+         [src]="course().iconUrl">
+
+    <div class="course-description" [ngStyle]="{'font-weight': isBold() ? 'bold' : 'normal'}">
+        {{ course().longDescription }}
+    </div>
+
+    <button (click)="toggleBold()" class="button">Toggle</button>
+</div>
