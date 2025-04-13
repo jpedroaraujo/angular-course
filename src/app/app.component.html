@@ -1,15 +1,11 @@
 <div class="top-menu">
-
     <img class="logo"
          src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
-
 </div>
-
 
 <div class="courses">
     @for (course of courses; track course.id) {
         <course-card [course]="course" />
     }
 </div>
-
 
